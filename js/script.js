@@ -5,6 +5,7 @@ $(document).ready(function() {
   arrows:true,
   fade: true,
   asNavFor: '.slider-nav'
+        
 });
 $('.slider-nav').slick({
   slidesToShow: 2,

@@ -98,29 +98,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    font-family: 'Bangers';
     text-align: center;
-    margin-top: 50px;
-    background-color: antiquewhite;
-}
-
-.wrapper {
-    margin: 0 5%;
+    background-color: #F0F0F2;
 }
 
 .slider-for img {
    filter: drop-shadow(0 0 0.4rem gray);
-padding: 0 4%;
-    width: 90%;
+    width: 100%;
+    height: 500px;
 }
 
-.slider-nav {
-   
-    
+.slider-for,
+.slider-nav{
+    margin: 0 5%;
 }
+
+ 
 .slider-nav img {
-width: 90%;
+    width: 100%;
     opacity: .6;
+    height: auto;
     filter: saturate(50%);
 }
 
