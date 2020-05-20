@@ -3,60 +3,58 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ceda | Carousel One</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
- <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
 
    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
- <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-<body>
-    <div class="wrapper">
+ 
+<body width="90%">
+    
      
-        <div class="slider-for">
-            <div><img src="img/cartoon.png"></div>
-            <div><img src="img/ceda-horizontal.jpg"></div>
-            <div><img src="img/cast.png"></div>
-            <div><img src="img/whohaha.png"></div>
-            <div><img src="img/backgrounddraft1-2.jpg"></div>
+        <div class="slider-for" width="90%">
+            <div><img src="https://static.wixstatic.com/media/97369c_ddddd434acb5402b858281f95e63836e~mv2.jpg"width="80%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_a65a2493c41b4ff38cd21b3ac0e0d714~mv2.jpg"width="80%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_4ab3caeb1fa848afb4e6b3fe6756b487~mv2.png"width="90%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_10c6cdde8c8140d085090907bfd8d862~mv2.png"width="90%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_e88c0695ea664dddad9a5df746f4e184~mv2.png"width="90%"></div>
         </div>
          
            
-        <div class="slider-nav">
-            <div><img src="img/cartoon.png"></div>
-            <div><img src="img/ceda-horizontal.jpg"></div>
-            <div><img src="img/cast.png"></div>
-            <div><img src="img/whohaha.png"></div>
-            <div><img src="img/backgrounddraft1-2.jpg"></div>
+        <div class="slider-nav" width="70%">
+         <div><img src="https://static.wixstatic.com/media/97369c_ddddd434acb5402b858281f95e63836e~mv2.jpg" width="50%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_a65a2493c41b4ff38cd21b3ac0e0d714~mv2.jpg"width="50%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_4ab3caeb1fa848afb4e6b3fe6756b487~mv2.png"width="50%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_10c6cdde8c8140d085090907bfd8d862~mv2.png"width="50%"></div>
+            <div><img src="https://static.wixstatic.com/media/97369c_e88c0695ea664dddad9a5df746f4e184~mv2.png"width="50%"></div>
         </div>
   
-    </div>
   
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js></script>
 
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js></script>
-<script src="js/script.js"></script>
 
+    <script type="text/javascript">
+$(document).ready(function() {
+      $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows:true,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+});
+ 
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </script>
 </body>
 
 </html>
