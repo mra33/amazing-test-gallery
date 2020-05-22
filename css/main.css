@@ -215,14 +215,11 @@ body {
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
 
-    .wrapper {
-        margin: none;
-    }
+  
 .slider-for img {
-   filter: drop-shadow(0 0 0.4rem gray);
+   width: 95%;
 }
 
-    
     slider-nav img {
         width: 100%;
     }
@@ -234,8 +231,13 @@ body {
 
 }
 
+@media only screen and (min-width: 1200px) {
 
-
+    wrapper {
+        margin: 0 20%;
+    }   
+    
+}
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
