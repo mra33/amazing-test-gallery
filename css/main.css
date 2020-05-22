@@ -95,30 +95,31 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles.slider-for img {
+   filter: drop-shadow(0 0 0.4rem gray);
+    width: 95%;
+}
    ========================================================================== */
 body {
-    text-align: center;
     background-color: #F0F0F2;
 }
 
+.wrapper {
+    margin: 5%;
+}
+
+
 .slider-for img {
    filter: drop-shadow(0 0 0.4rem gray);
-    width: 100%;
-    height: 500px;
+   width: 100%;
 }
 
-.slider-for,
-.slider-nav{
-    margin: 0 5%;
-}
-
- 
 .slider-nav img {
-    width: 100%;
-    opacity: .6;
-    height: auto;
-    filter: saturate(50%);
+   width: 60%;
+}
+ 
+.slider-nav {
+   opacity: .6;
 }
 
 
@@ -210,6 +211,30 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports that meet the condition */
+
+    .wrapper {
+        margin: none;
+    }
+.slider-for img {
+   filter: drop-shadow(0 0 0.4rem gray);
+}
+
+    
+    slider-nav img {
+        width: 100%;
+    }
+.slider-nav {
+   opacity: .6;
+}
+    }
+
+
+}
+
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
